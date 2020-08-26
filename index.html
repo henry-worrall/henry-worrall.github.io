@@ -17,13 +17,44 @@
 
     <section class="main-content">
       <h3>
-<a id="about-me" class="anchor" href="#about-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About me</h3>
-<p>I graduated with a first-class master's degree in natural sciences from the University of Leeds, where I specialised in physics and mathematics. During my master's year, I undertook a detailed research project into liquid crystal dispersions, where I studied the behaviour of novel discotic liquid crystals and graphene oxide platelets. Through this experience, I gained both practical lab-based research skills and analytical-based research to supplement the advanced quantitative knowledge I learnt during university lectures. Additionally, I have experience working a patent attorney, where I provided legal advice to well-known international companies to help protect their novel scientific inventions.</p>
-<p>I am currently working towards a job in software either as a developer or as a data scientist. To aid this mission, I have completed online courses and completed projects which are displayed through GitHub on this website. Please feel free to take a look, and if you like, let me know your thoughts! All feedback is welcomed.</p>
+        <a id="about-me" class="anchor" href="#about-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About me
+      </h3>
+
+      <p>
+        In 2018, I graduated with a first-class master's degree in natural sciences, specialising in physics and mathematics, from the University of Leeds. During my master's year, I undertook a detailed research project into liquid crystal dispersions, where I studied the behaviour of novel discotic liquid crystals and graphene oxide platelets. Through this experience, I gained plenty of analytical and research skills which complemented my lectures. Additionally, I have experience working as a patent attorney, where I provided legal advice to well-known, international companies, where I helped to secure legal protection their novel scientific inventions.
+      </p>
+
+      <p>
+        I am currently working towards a job in software either as a developer or as a data scientist. To aid this mission, I have completed online courses and completed projects which can be found on <a href="https://github.com/henry-worrall/">GitHub</a>. Please feel free to take a look, and if you like, let me know your thoughts! All feedback is welcomed.
+      </p>
+
+      <h3>
+        <a id="recent-projects" class="anchor" href="#Recent Projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Recent Projects
+      </h3>
+
+      <h4>
+        Tableau Dashboard - (view <a href="https://public.tableau.com/profile/henry.worrall#!/vizhome/COVID-19DashboardAnalysis/COVID-19Dashboard">here</a>)
+      </h4>
+
+      <p>
+        Amidst the panic of lockdown, I found myself looking to develop new skills and experiment with ways of visualising data. One software platform which I kept appearing in job descriptions was "Tableau". After stumbling across a blog post containing a link to Johns Hopkins CSSE's COVID-19 data, I decided it was time to make my first dashboard. Using Tableau as my design platform, I jumped in.  
+      </p>
+
+      <p>
+        The first hurdle that I had to overcome was to sync my live data source with Tableau. Unfortunately, syncing a live data source to Tableau is not something that is not covered in most beginner Tableau tutorials (I couldn't find any at least!). I eventually got over this hurdle by spotting that I could link my free version of Tableau to a Google Spreadsheet. I therefore decided that my best bet was to download my data into an online Google Sheet which could then connect to Tableau. Writing a Python script to automatically download the data was simple enough. I then needed to reformed that data into an easier to process format - I used the pandas library for this. The next step was to get my head around the security protocols of Google's APIs so that I could automatically save the reformated data online (thankfully, there were tutorials for this step!). To complete the process in order to fully automate the process, I used the windows task scheduler to run the script every day.
+      </p>
+
+      <p>
+        I began visualising the data and designing the dashbaord. In my experience, I found Tableau is fantastic for making nice visualisations quickly, with extensive features for formatting data it lots of different ways. However, it was at times infuriating trying to basic features to work when you weren't used to them - for example, I couldn't get the ranking function to work on a calculated field and had to write my own function just to get around this! Overall, I was happy with the finished product and the analysis and insights one can gain from using it. 
+      </p>
+
+      <p>
+        During this project, I also learnt to web-scrape data using the beautiful soup library. I needed to do this to obtain additional information about each country, e.g. population, and GDP. This allows the user to draw insights about the virus relative to a country's population and wealth.
+      </p>
 
       <footer class="site-footer">
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+        <span class="site-footer-credits">Email: <a href="mailto:h.worrall25@hotmail.co.uk">h.worrall25@hotail.co.uk</a>.</span>
       </footer>
 
     </section>
